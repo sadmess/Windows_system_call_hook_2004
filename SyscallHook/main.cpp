@@ -249,7 +249,7 @@ BOOLEAN NTAPI KhpReverseCallbackSetLogic()
 	return status;
 }
 
-NTSTATUS NTAPI KhSetResetHook(PCHAR syscallName, BOOLEAN set)
+NTSTATUS NTAPI KhSetResetHook(BOOLEAN set)
 {
 	PULONG64 callback = NULL;
 	NTSTATUS ntstatus = STATUS_SUCCESS;
@@ -302,7 +302,7 @@ NTSTATUS DriverInitialize(PDRIVER_OBJECT pDriverObject, PUNICODE_STRING Registry
 	if (!KhInitiazeHookSystem())
 		return STATUS_UNSUCCESSFUL;
 
-	if (!NT_SUCCESS(KhSetResetHook("NtDisplayString", TRUE)))
+	if (!NT_SUCCESS(KhSetResetHook(TRUE)))
 	{
 		return STATUS_UNSUCCESSFUL;
 	}
