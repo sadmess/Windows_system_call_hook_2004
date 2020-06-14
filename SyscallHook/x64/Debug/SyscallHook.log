@@ -1,0 +1,21 @@
+﻿  Building 'SyscallHook' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+  Stamping x64\Debug\SyscallHook.inf
+  Stamping [Version] section with DriverVer=06/14/2020,14.6.4.185
+  Assembling sup.asm...
+  main.cpp
+C:\Users\81021\source\repos\SyscallHook\SyscallHook\main.cpp(86,199): warning C4244: “=”: 从“UINT64”转换到“ULONG”，可能丢失数据
+sup.obj : error LNK2019: 无法解析的外部符号 KhpHooked_NtClose，该符号在函数 KhpHookHandler 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 "unsigned __int64 __cdecl KhpGetCr0(void)" (?KhpGetCr0@@YA_KXZ)，该符号在函数 "void __cdecl KhpEnableDisableWriteProtection(unsigned char)" (?KhpEnableDisableWriteProtection@@YAXE@Z) 中被引用
+    已定义且可能匹配的符号上的提示:
+      KhpGetCr0
+main.obj : error LNK2019: 无法解析的外部符号 "void __cdecl KhpSetCr0(unsigned __int64)" (?KhpSetCr0@@YAX_K@Z)，该符号在函数 "void __cdecl KhpEnableDisableWriteProtection(unsigned char)" (?KhpEnableDisableWriteProtection@@YAXE@Z) 中被引用
+    已定义且可能匹配的符号上的提示:
+      KhpSetCr0
+main.obj : error LNK2019: 无法解析的外部符号 "long __cdecl KhpHookHandler(void)" (?KhpHookHandler@@YAJXZ)，该符号在函数 "unsigned char __cdecl KhInitiazeHookSystem(void)" (?KhInitiazeHookSystem@@YAEXZ) 中被引用
+    已定义且可能匹配的符号上的提示:
+      KhpHookHandler
+main.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) long __cdecl IoCreateDriver(struct _UNICODE_STRING *,long (__cdecl*)(struct _DRIVER_OBJECT *,struct _UNICODE_STRING *))" (__imp_?IoCreateDriver@@YAJPEAU_UNICODE_STRING@@P6AJPEAU_DRIVER_OBJECT@@0@Z@Z)，该符号在函数 "long __cdecl DriverEntry(struct _DRIVER_OBJECT *,struct _UNICODE_STRING *)" (?DriverEntry@@YAJPEAU_DRIVER_OBJECT@@PEAU_UNICODE_STRING@@@Z) 中被引用
+WdfDriverEntry.lib(stub.obj) : error LNK2019: 无法解析的外部符号 DriverEntry，该符号在函数 FxDriverEntryWorker 中被引用
+    已定义且可能匹配的符号上的提示:
+      "long __cdecl DriverEntry(struct _DRIVER_OBJECT *,struct _UNICODE_STRING *)" (?DriverEntry@@YAJPEAU_DRIVER_OBJECT@@PEAU_UNICODE_STRING@@@Z)
+C:\Users\81021\source\repos\SyscallHook\x64\Debug\SyscallHook.sys : fatal error LNK1120: 6 个无法解析的外部命令

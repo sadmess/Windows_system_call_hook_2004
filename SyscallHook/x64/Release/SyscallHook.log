@@ -1,0 +1,32 @@
+﻿  Building 'SyscallHook' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+  Stamping x64\Release\SyscallHook.inf
+  Stamping [Version] section with DriverVer=06/14/2020,14.34.11.754
+  main.cpp
+C:\Users\81021\source\repos\SyscallHook\SyscallHook\main.cpp(54,14): warning C4047: “return”:“uintptr_t”与“void *”的间接级别不同
+C:\Users\81021\source\repos\SyscallHook\SyscallHook\main.cpp(73,14): warning C4047: “return”:“uintptr_t”与“void *”的间接级别不同
+C:\Users\81021\source\repos\SyscallHook\SyscallHook\main.cpp(76,13): warning C4047: “return”:“uintptr_t”与“void *”的间接级别不同
+C:\Users\81021\source\repos\SyscallHook\SyscallHook\main.cpp(86,213): warning C4242: “=”: 从“UINT64”转换到“ULONG”，可能丢失数据
+C:\Users\81021\source\repos\SyscallHook\SyscallHook\main.cpp(235,9): warning C4189: “inst”: 局部变量已初始化但不引用
+C:\Users\81021\source\repos\SyscallHook\SyscallHook\main.cpp(252,37): warning C4100: “syscallName”: 未引用的形参
+C:\Users\81021\source\repos\SyscallHook\SyscallHook\main.cpp(298,73): warning C4100: “RegistryPath”: 未引用的形参
+C:\Users\81021\source\repos\SyscallHook\SyscallHook\main.cpp(316,68): warning C4100: “RegistryPath”: 未引用的形参
+C:\Users\81021\source\repos\SyscallHook\SyscallHook\main.cpp(316,37): warning C4100: “pDriverObject”: 未引用的形参
+  SyscallHook.vcxproj -> C:\Users\81021\source\repos\SyscallHook\x64\Release\SyscallHook.sys
+  Done Adding Additional Store
+  Successfully signed: C:\Users\81021\source\repos\SyscallHook\x64\Release\SyscallHook.sys
+  
+  Driver is a Universal Driver.
+  .........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  C:\Users\81021\source\repos\SyscallHook\x64\Release\SyscallHook\syscallhook.cat
+  Done Adding Additional Store
+  Successfully signed: C:\Users\81021\source\repos\SyscallHook\x64\Release\SyscallHook\syscallhook.cat
+  
