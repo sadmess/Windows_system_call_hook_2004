@@ -14,7 +14,7 @@ KhSetResetHook:
 
 # Use
 
-you should build it with vs2019 and use kdmapper (or any other way) to load the driver.
+you should build it with vs2019(wdk10) and use kdmapper (or any other way) to load the driver.
 
 *if you donnot close patchguard, you will get bsod*
 
