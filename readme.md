@@ -16,7 +16,7 @@ KhSetResetHook:
 
 you should build it with vs2019(wdk10) and use kdmapper (or any other way) to load the driver.
 
-*if you donot close patchguard, you will get bsod*
+*if you DO NOT close patchguard, you will get bsod*
 
 This hook way still not be found by EAC BE etc.
 
