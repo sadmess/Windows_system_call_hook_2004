@@ -21,3 +21,7 @@ you should build it with vs2019(wdk10) and use kdmapper (or any other way) to lo
 This hook way still not be found by EAC BE etc.
 
 Have good cheat day!
+
+# Win11
+
+you just need to change some offsets to fit Win11
